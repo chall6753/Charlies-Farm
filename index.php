@@ -11,7 +11,7 @@
 <body>
 
     <h1>SENSOR DATA</h1>
-    <button id='relay1' type='button' value='on'>on/off</button>
+    
 <?php
 echo console.log("yeet");
 include_once 'database.php';
@@ -25,7 +25,6 @@ $result = mysqli_query($conn,$sql);
 $resultCheck = mysqli_num_rows($result);
 
 
-echo '<button type="button" value="on">asdf</button>';
 echo '<table cellspacing="5" cellpadding="5">
       <tr> 
         <th>ID</th> 
@@ -66,5 +65,5 @@ $conn->close();
 ?> 
 </body>
 
-    <script src='index.js'></script>
+    
 </html>
