@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="refresh" content="5" >
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="src/style.css" media="screen"/>
 
 	<title> Sensor Data </title>
 
