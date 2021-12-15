@@ -24,6 +24,8 @@ void step3();
 const char* ssid     = "dogghouse";
 const char* password = "Jester91!";
 // REPLACE with your Domain name and URL path or IP address with path
+// const char* serverName = "http://10.0.0.54/charliesfarm/post-esp-data.php";
+// const char* serverName1 = "http://10.0.0.54/charliesfarm/GetData.php";
 const char* serverName = "http://10.0.0.54/charliesfarm/post-esp-data.php";
 const char* serverName1 = "http://10.0.0.54/charliesfarm/GetData.php";
 float water_temp;
@@ -195,7 +197,7 @@ if (ec < 1200){
     String ec_str = String(ec);
     String ph_up_pump_str = String(ph_up_pump);
     String ph_down_pump_str = String(ph_down_pump);
-    String httpRequestData = "temp="+temp_str+"&humidity="+rel_hum_str+"&water_temp="+water_temp_str+"&pH="+pH_str+"&ec="+ec_str+"&ph_up_pump="+ph_up_pump_str+"ph_down_pump="+ph_down_pump_str;
+    String httpRequestData = "temp_air="+temp_str+"&humidity="+rel_hum_str+"&temp_water="+water_temp_str+"&pH="+pH_str+"&ec="+ec_str+"&ph_up_pump="+ph_up_pump_str+"ph_down_pump="+ph_down_pump_str;
     Serial.print("httpRequestData: ");
     Serial.println(httpRequestData);
     
