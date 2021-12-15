@@ -13,6 +13,7 @@
     <h1>SENSOR DATA</h1>
     <button id='relay1' type='button' value='on'>on/off</button>
 <?php
+echo console.log("yeet")
 include_once 'database.php';
      
 if ($conn->connect_error) {
