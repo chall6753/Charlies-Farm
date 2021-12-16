@@ -1,3 +1,7 @@
+<?php
+include_once 'database.php';
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,8 +17,8 @@
     <h1>SENSOR DATA</h1>
     
 <?php
-echo console.log("yeet");
-include_once 'database.php';
+
+
      
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
