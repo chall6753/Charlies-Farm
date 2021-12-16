@@ -14,7 +14,7 @@
     
 <?php
 
-include_once './database.php';
+include_once 'src/database.php';
      
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
