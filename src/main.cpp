@@ -26,7 +26,7 @@ const char* password = "Jester91!";
 // REPLACE with your Domain name and URL path or IP address with path
 // const char* serverName = "http://10.0.0.54/charliesfarm/post-esp-data.php";
 // const char* serverName1 = "http://10.0.0.54/charliesfarm/GetData.php";
-const char* serverName = "http://10.0.0.54/charliesfarm/post-esp-data.php";
+const char* serverName = "https://charlies-farm-database.herokuapp.com/src/post-esp-data.php";
 const char* serverName1 = "http://10.0.0.54/charliesfarm/GetData.php";
 float water_temp;
 float pH;
@@ -197,7 +197,9 @@ if (ec < 1200){
     String ec_str = String(ec);
     String ph_up_pump_str = String(ph_up_pump);
     String ph_down_pump_str = String(ph_down_pump);
-    String httpRequestData = "temp_air="+temp_str+"&humidity="+rel_hum_str+"&temp_water="+water_temp_str+"&pH="+pH_str+"&ec="+ec_str+"&ph_up_pump="+ph_up_pump_str+"ph_down_pump="+ph_down_pump_str;
+    String pmp_a_str = String(pmp_a);
+    String pmp_b_str = String(pmp_b);
+    String httpRequestData = "temp_air="+temp_str+"&humidity="+rel_hum_str+"&temp_water="+water_temp_str+"&pH="+pH_str+"&ec="+ec_str+"&ph_up_pump="+ph_up_pump_str+"ph_down_pump="+ph_down_pump_str+"&pmp_a="+pmp_a_str+"&pmp_b="+pmp_b_str;
     Serial.print("httpRequestData: ");
     Serial.println(httpRequestData);
     
