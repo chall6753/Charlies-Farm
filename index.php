@@ -14,13 +14,7 @@
     
 <?php
 
-$cleardb_server = "us-cdbr-east-05.cleardb.net";
-$cleardb_username = "b91483d47a3214";
-$cleardb_password = "b7b270b2";
-$cleardb_db = "heroku_bb2becdba3767a9";
-
-// Connect to DB
-$conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
+include_once './database.php';
      
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
