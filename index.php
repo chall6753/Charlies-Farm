@@ -20,52 +20,52 @@ include_once 'database.php';
 
 
      
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+// if ($conn->connect_error) {
+//     die("Connection failed: " . $conn->connect_error);
+// }
 
-$sql = "SELECT id, temp_air, humidity,temp_water, date FROM sensor_data ORDER BY id DESC"; /*select items to display from the sensordata table in the data base*/
-$result = mysqli_query($conn,$sql);
-$resultCheck = mysqli_num_rows($result);
+// $sql = "SELECT id, temp_air, humidity,temp_water, date FROM sensor_data ORDER BY id DESC"; /*select items to display from the sensordata table in the data base*/
+// $result = mysqli_query($conn,$sql);
+// $resultCheck = mysqli_num_rows($result);
 
 
-echo '<table cellspacing="5" cellpadding="5">
-      <tr> 
-        <th>ID</th> 
-        <th>Date - Time</th> 
-        <th>Temperature &deg;C</th> 
-        <th>Humidity &#37;</th>
-        <th>Water Temp &deg;C</th>
+// echo '<table cellspacing="5" cellpadding="5">
+//       <tr> 
+//         <th>ID</th> 
+//         <th>Date - Time</th> 
+//         <th>Temperature &deg;C</th> 
+//         <th>Humidity &#37;</th>
+//         <th>Water Temp &deg;C</th>
              
-      </tr>';
+//       </tr>';
 
 
-if ($resultCheck >0) {
-    while ($row = mysqli_fetch_assoc($result)) {
-        $row_id = $row["id"];
-        $row_date = $row["date"];
-        $row_temp = $row["temp"];
-        $row_humidity = $row["humidity"];
-        $row_water_temp = $row["water_temp"];
+// if ($resultCheck >0) {
+//     while ($row = mysqli_fetch_assoc($result)) {
+//         $row_id = $row["id"];
+//         $row_date = $row["date"];
+//         $row_temp = $row["temp"];
+//         $row_humidity = $row["humidity"];
+//         $row_water_temp = $row["water_temp"];
       
-        echo '<tr> 
-                <td>' . $row_id . '</td> 
-                <td>' . $row_date . '</td> 
-                <td>' . $row_temp . '</td> 
-                <td>' . $row_humidity . '</td> 
-                <td>' . $row_water_temp . '</td> 
+//         echo '<tr> 
+//                 <td>' . $row_id . '</td> 
+//                 <td>' . $row_date . '</td> 
+//                 <td>' . $row_temp . '</td> 
+//                 <td>' . $row_humidity . '</td> 
+//                 <td>' . $row_water_temp . '</td> 
 
                
                 
-              </tr>';
+//               </tr>';
 
 
         
-    }
-    $result->free();
-}
+//     }
+//     $result->free();
+// }
 
-$conn->close();
+// $conn->close();
 ?> 
 </body>
 
