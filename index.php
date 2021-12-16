@@ -1,7 +1,3 @@
-<?php
-include_once 'database.php';
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,11 +14,17 @@ include_once 'database.php';
     
 <?php
 
+$cleardb_server = "us-cdbr-east-05.cleardb.net";
+$cleardb_username = "b91483d47a3214";
+$cleardb_password = "b7b270b2";
+$cleardb_db = "heroku_bb2becdba3767a9";
 
+// Connect to DB
+$conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
      
-// if ($conn->connect_error) {
-//     die("Connection failed: " . $conn->connect_error);
-// }
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
 // $sql = "SELECT id, temp_air, humidity,temp_water, date FROM sensor_data ORDER BY id DESC"; /*select items to display from the sensordata table in the data base*/
 // $result = mysqli_query($conn,$sql);
