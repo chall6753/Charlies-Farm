@@ -40,28 +40,28 @@ echo '<table cellspacing="5" cellpadding="5">
       </tr>';
 
 
-// if ($resultCheck >0) {
-//     while ($row = mysqli_fetch_assoc($result)) {
-//         $row_id = $row["id"];
-//         $row_date = $row["date"];
-//         $row_temp = $row["temp"];
-//         $row_humidity = $row["humidity"];
-//         $row_water_temp = $row["water_temp"];
+if ($resultCheck >0) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        $row_id = $row["id"];
+        $row_date = $row["date"];
+        $row_temp = $row["temp"];
+        $row_humidity = $row["humidity"];
+        $row_water_temp = $row["water_temp"];
       
-    //     echo '<tr> 
-    //             <td>' . $row_id . '</td> 
-    //             <td>' . $row_date . '</td> 
-    //             <td>' . $row_temp . '</td> 
-    //             <td>' . $row_humidity . '</td> 
-    //             <td>' . $row_water_temp . '</td> 
+        echo '<tr> 
+                <td>' . $row_id . '</td> 
+                <td>' . $row_date . '</td> 
+                <td>' . $row_temp . '</td> 
+                <td>' . $row_humidity . '</td> 
+                <td>' . $row_water_temp . '</td> 
 
                
                 
-    //           </tr>';
+              </tr>';
 
 
         
-    // }
+    }
     $result->free();
 }
 
