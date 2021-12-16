@@ -13,9 +13,9 @@ if(!$conn){
 echo "Connection Success!<br><br>";
 
 if($_SERVER['REQUEST_METHOD']==='POST'){
-    $temp_air = test_input($_POST["temp"]);
+    $temp_air = test_input($_POST["temp_air"]);
     $humidity = test_input($_POST["humidity"]);
-    $temp_water = test_input($_POST["water_temp"]);
+    $temp_water = test_input($_POST["temp_water"]);
     $pH = test_input($_POST["pH"]);
     $ec= test_input($_POST["ec"]);
     $ph_up_pump= test_input($_POST["ph_up_pump"]);

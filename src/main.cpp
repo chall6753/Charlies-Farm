@@ -223,5 +223,5 @@ if (ec < 1200){
   }
 
   Serial.println("what");
-  delay(5000);
+  delay(300000);
 }
