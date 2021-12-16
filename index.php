@@ -40,9 +40,9 @@ if ($resultCheck >0) {
     while ($row = mysqli_fetch_assoc($result)) {
         $row_id = $row["id"];
         $row_date = $row["date"];
-        $row_temp = $row["temp"];
+        $row_temp = $row["temp_air"];
         $row_humidity = $row["humidity"];
-        $row_water_temp = $row["water_temp"];
+        $row_water_temp = $row["temp_water"];
       
         echo '<tr> 
                 <td>' . $row_id . '</td> 
