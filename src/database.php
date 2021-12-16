@@ -7,7 +7,7 @@
         
     // $conn = mysqli_connect($dbHost, $dbUsername, $dbUserPassword, $dbName );
 		
-
+    echo console.log("yeet");
     //Get Heroku ClearDB connection information
 
 $cleardb_server = "us-cdbr-east-05.cleardb.net";
