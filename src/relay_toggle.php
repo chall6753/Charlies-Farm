@@ -26,7 +26,7 @@
         outline: none;
         color: #fff;
         background-color: #4CAF50;
-        border: none;
+        border: solid;
         border-radius: 15px;
         box-shadow: 0 5px #999;
       }
