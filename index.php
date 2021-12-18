@@ -20,7 +20,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT id, temp_air, humidity,temp_water, pH, ec, ph_up_pump, ph_down_pump, pmp_a, pmp_b, date, comment FROM sensor_data ORDER BY id DESC"; /*select items to display from the sensordata table in the data base*/
+$sql = "SELECT id, temp_air, humidity,temp_water, ph, ec, ph_up_pump, ph_down_pump, pmp_a, pmp_b, date, comment FROM sensor_data ORDER BY id DESC"; /*select items to display from the sensordata table in the data base*/
 $result = mysqli_query($conn,$sql);
 $resultCheck = mysqli_num_rows($result);
 
