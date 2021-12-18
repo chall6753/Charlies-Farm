@@ -78,12 +78,22 @@
         <input type="hidden" name="id" value="2"/>  
         <input type="hidden" name="status" value='0'/>
     </form>
-
+    <form action="Update_Relay_DB.php" method="GET" id="fanOn" >
+        <input type="hidden" name="id" value="3"/>  
+        <input type="hidden" name="status" value='1'/>
+    </form>
+    <form action="Update_Relay_DB.php" method="GET" id="fanOff">
+        <input type="hidden" name="id" value="3"/>  
+        <input type="hidden" name="status" value='0'/>
+    </form>
     
     <button class="onButton" name= "subject" type="submit" form="pumpOn" value="pumpOn" >Pump On</button>
     <button class="offButton" name= "subject" type="submit" form="pumpOff" value="pumpOff">Pump Off</button>
     <br>
-    <button class="onButton" name= "subject" type="submit" form="lightsOn" value="pumpOn" >Lights On</button>
-    <button class="offButton" name= "subject" type="submit" form="lightsOff" value="pumpOff">Lights Off</button>
+    <button class="onButton" name= "subject" type="submit" form="lightsOn" value="lightsOn" >Lights On</button>
+    <button class="offButton" name= "subject" type="submit" form="lightsOff" value="lightsOff">Lights Off</button>
+    <br>
+    <button class="onButton" name= "subject" type="submit" form="fanOn" value="fanOn" >Fan On</button>
+    <button class="offButton" name= "subject" type="submit" form="fanOff" value="fanOff">Fan Off</button>
   </body>
 </html>
