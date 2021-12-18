@@ -20,7 +20,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT id, temp_air, humidity,temp_water, pH, ec, ph_up_pump, ph_down_pump, pmp_a, pmp_b, date FROM sensor_data ORDER BY id DESC"; /*select items to display from the sensordata table in the data base*/
+$sql = "SELECT id, temp_air, humidity, temp_water, pH, ec, ph_up_pump, ph_down_pump, pmp_a, pmp_b, date FROM sensor_data ORDER BY id DESC"; /*select items to display from the sensordata table in the data base*/
 $result = mysqli_query($conn,$sql);
 $resultCheck = mysqli_num_rows($result);
 
@@ -64,12 +64,12 @@ if ($resultCheck >0) {
                 <td>' . $row_temp . '</td> 
                 <td>' . $row_humidity . '</td> 
                 <td>' . $row_water_temp . '</td> 
-                <td>' . $row_pH . '</td>'
-                <td>' . $row_ec . '</td>'
-                <td>' . $row_ph_up_pump . '</td>'
-                <td>' . $row_ph_down_pump . '</td>'
-                <td>' . $row_pmp_a . '</td>'
-                <td>' . $row_pmp_b . '</td>'
+                <td>' . $row_pH . '</td>
+                <td>' . $row_ec . '</td>
+                <td>' . $row_ph_up_pump . '</td>
+                <td>' . $row_ph_down_pump . '</td>
+                <td>' . $row_pmp_a . '</td>
+                <td>' . $row_pmp_b . '</td>
 
                
                 
