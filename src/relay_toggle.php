@@ -79,11 +79,11 @@
         <input type="hidden" name="status" value='0'/>
     </form>
     <form action="Update_Relay_DB.php" method="GET" id="fanOn" >
-        <input type="hidden" name="id" value="3"/>  
+        <input type="hidden" name="id" value="4"/>  
         <input type="hidden" name="status" value='1'/>
     </form>
     <form action="Update_Relay_DB.php" method="GET" id="fanOff">
-        <input type="hidden" name="id" value="3"/>  
+        <input type="hidden" name="id" value="4"/>  
         <input type="hidden" name="status" value='0'/>
     </form>
     
