@@ -52,8 +52,8 @@ if ($resultCheck >0) {
         $row_water_temp = $row["temp_water"];
         $row_pH = $row["pH"];
         $row_ec = $row["ec"];
-        $row_pH_up_pump = $row["ph_up_pump"];
-        $row_pH_down_pump = $row["ph_down_pump"];
+        $row_ph_up_pump = $row["ph_up_pump"];
+        $row_ph_down_pump = $row["ph_down_pump"];
         $row_pmp_a = $row["pmp_a"];
         $row_pmp_b = $row["pmp_b"];
 
@@ -66,8 +66,8 @@ if ($resultCheck >0) {
                 <td>' . $row_water_temp . '</td> 
                 <td>' . $row_pH . '</td>'
                 <td>' . $row_ec . '</td>'
-                <td>' . $row_pH_up_pump . '</td>'
-                <td>' . $row_pH_down_pump . '</td>'
+                <td>' . $row_ph_up_pump . '</td>'
+                <td>' . $row_ph_down_pump . '</td>'
                 <td>' . $row_pmp_a . '</td>'
                 <td>' . $row_pmp_b . '</td>'
 
