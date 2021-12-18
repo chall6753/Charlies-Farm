@@ -14,7 +14,7 @@
     $sql = "UPDATE relays SET status = $status WHERE id=$id"; //update status of relay off or on
     mysqli_query($conn,$sql);
     
-    header('Location: ./main.php')
+    header('Location: ./relay_toggle.php')
     
 
   
