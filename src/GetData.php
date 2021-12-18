@@ -3,9 +3,7 @@
   
   if (!empty($_POST)) {
     
-    
- 
-    
+        
     $sql = "SELECT * FROM relays ";
     $result = mysqli_query($conn,$sql);
     $resultCheck = mysqli_num_rows($result);

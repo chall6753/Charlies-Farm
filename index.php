@@ -32,6 +32,13 @@ echo '<table cellspacing="5" cellpadding="5">
         <th>Temperature &deg;C</th> 
         <th>Humidity &#37;</th>
         <th>Water Temp &deg;C</th>
+        <th>pH</>
+        <th>ec</th>
+        <th>pH UP Pump</th>
+        <th>ph DOWN Pump</th>
+        <th>Nutrient A Pump</th>
+        <th>Nutrient B Pump</th>
+
              
       </tr>';
 
@@ -43,6 +50,13 @@ if ($resultCheck >0) {
         $row_temp = $row["temp_air"];
         $row_humidity = $row["humidity"];
         $row_water_temp = $row["temp_water"];
+        $row_pH = $row["pH"];
+        $row_ec = $row["ec"];
+        $row_pH_up_pump = $row["pH_up_pump"];
+        $row_pH_down_pump = $row["pH_down_pump"];
+        $row_pmp_a = $row["pmp_a"];
+        $row_pmp_b = $row["pmp_b"];
+
       
         echo '<tr> 
                 <td>' . $row_id . '</td> 
@@ -50,6 +64,12 @@ if ($resultCheck >0) {
                 <td>' . $row_temp . '</td> 
                 <td>' . $row_humidity . '</td> 
                 <td>' . $row_water_temp . '</td> 
+                <td>' . $row_pH . '</td>'
+                <td>' . $row_ec . '</td>'
+                <td>' . $row_pH_up_pump . '</td>'
+                <td>' . $row_pH_down_pump . '</td>'
+                <td>' . $row_pmp_a . '</td>'
+                <td>' . $row_pmp_b . '</td>'
 
                
                 
