@@ -12,7 +12,7 @@
           text-align: center;
       }
       
-      h1 { font-size: 2.0rem; color:#2980b9;}
+      h1 { font-size: 2.5rem; color:black;}
       h2 { font-size: 1.25rem; color:#2980b9;}
       
       .onButton {
@@ -25,7 +25,7 @@
         text-decoration: none;
         color: #fff;
         background-color: #4CAF50;
-        border: solid;
+        border: 2px solid black;
         border-radius: 15px;
         
       }
