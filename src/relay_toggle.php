@@ -22,11 +22,11 @@
         font-weight: bold;
         cursor: pointer;
         text-align: center;
-        text-decoration: none;
         color: #fff;
         background-color: #4CAF50;
         border: 2px solid black;
         border-radius: 15px;
+        margin: 5px;
         
       }
       .onButton:hover {background-color: #3e8e41}
@@ -47,6 +47,7 @@
         background-color: #e74c3c;
         border: 2px solid black;
         border-radius: 15px;
+        margin: 5px;
         
       }
       .offButton:hover {background-color: #c0392b}
