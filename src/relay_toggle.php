@@ -43,18 +43,15 @@
         font-weight: bold;
         cursor: pointer;
         text-align: center;
-        text-decoration: none;
-        outline: none;
         color: #fff;
         background-color: #e74c3c;
-        border: none;
+        border: 2px solid black);
         border-radius: 15px;
-        box-shadow: 0 5px #999;
+        
       }
       .offButton:hover {background-color: #c0392b}
       .offButton:active {
         background-color: #c0392b;
-        box-shadow: 0 1px #666;
         transform: translateY(4px);
       }
     </style>
