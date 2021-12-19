@@ -23,15 +23,14 @@
         cursor: pointer;
         text-align: center;
         text-decoration: none;
-        outline: none;
         color: #fff;
         background-color: #4CAF50;
         border: solid;
         border-radius: 15px;
-        box-shadow: 0 5px #999;
+        
       }
-      .buttonON:hover {background-color: #3e8e41}
-      .buttonON:active {
+      .onButton:hover {background-color: #3e8e41}
+      .onButton:active {
         background-color: #3e8e41;
         box-shadow: 0 1px #666;
         transform: translateY(4px);
@@ -52,8 +51,8 @@
         border-radius: 15px;
         box-shadow: 0 5px #999;
       }
-      .buttonOFF:hover {background-color: #c0392b}
-      .buttonOFF:active {
+      .offButton:hover {background-color: #c0392b}
+      .offButton:active {
         background-color: #c0392b;
         box-shadow: 0 1px #666;
         transform: translateY(4px);
