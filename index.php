@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="refresh" content="5" >
+    <meta http-equiv="refresh" content="300" >
     <link rel="stylesheet" type="text/css" href="src/style.css" media="screen"/>
 
 	<title> Sensor Data </title>
