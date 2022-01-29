@@ -11,7 +11,7 @@
 <body>
 
     <h1>SENSOR DATA</h1>
-    
+    <a href="https://charlies-farm-database.herokuapp.com/src/relay_toggle.php">link text</a>
 <?php
 
 include_once 'src/database.php';
