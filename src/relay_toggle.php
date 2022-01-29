@@ -94,4 +94,5 @@
     <button class="onButton" name= "subject" type="submit" form="fanOn" value="fanOn" >Fan On</button>
     <button class="offButton" name= "subject" type="submit" form="fanOff" value="fanOff">Fan Off</button>
   </body>
+  <a href="https://charlies-farm-database.herokuapp.com/" >Sensor Data</a>
 </html>
