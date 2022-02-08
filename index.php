@@ -3,28 +3,18 @@
 <head>
     <meta http-equiv="refresh" content="300" >
     <link rel="stylesheet" type="text/css" href="src/style.css" media="screen"/>
-
 	<title> Sensor Data </title>
-
 </head>
-
 <body>
-
-    <h1>SENSOR DATA</h1>
-    
+    <h1>SENSOR DATA</h1> 
 <?php
-
-include_once 'src/database.php';
-     
+include_once 'src/database.php';    
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
 $sql = "SELECT id, temp_air, humidity, temp_water, pH, ec, ph_up_pump, ph_down_pump, pmp_a, pmp_b, date FROM sensor_data ORDER BY id DESC LIMIT 100"; /*select items to display from the sensordata table in the data base*/
 $result = mysqli_query($conn,$sql);
 $resultCheck = mysqli_num_rows($result);
-
-
 echo '<table cellspacing="5" cellpadding="5">
       <tr> 
         <th>ID</th> 
@@ -37,12 +27,8 @@ echo '<table cellspacing="5" cellpadding="5">
         <th>pH UP Pump</th>
         <th>ph DOWN Pump</th>
         <th>Nutrient A Pump</th>
-        <th>Nutrient B Pump</th>
-
-             
+        <th>Nutrient B Pump</th>     
       </tr>';
-
-
 if ($resultCheck >0) {
     while ($row = mysqli_fetch_assoc($result)) {
         $row_id = $row["id"];
@@ -56,8 +42,6 @@ if ($resultCheck >0) {
         $row_ph_down_pump = $row["ph_down_pump"];
         $row_pmp_a = $row["pmp_a"];
         $row_pmp_b = $row["pmp_b"];
-
-      
         echo '<tr> 
                 <td>' . $row_id . '</td> 
                 <td>' . $row_date . '</td> 
@@ -70,20 +54,11 @@ if ($resultCheck >0) {
                 <td>' . $row_ph_down_pump . '</td>
                 <td>' . $row_pmp_a . '</td>
                 <td>' . $row_pmp_b . '</td>
-
-               
-                
-              </tr>';
-
-
-        
+              </tr>';   
     }
     $result->free();
 }
-
 $conn->close();
 ?> 
 </body>
-
-    
 </html>
