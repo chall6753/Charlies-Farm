@@ -6,7 +6,9 @@
 	<title> Sensor Data </title>
 </head>
 <body>
-    <h1>SENSOR DATA</h1> 
+
+    <h1>SENSOR DATA</h1>
+    <a href="https://charlies-farm-database.herokuapp.com/src/relay_toggle.php">Relay Controls</a>
 <?php
 include_once 'src/database.php';    
 if ($conn->connect_error) {
@@ -61,4 +63,6 @@ if ($resultCheck >0) {
 $conn->close();
 ?> 
 </body>
+
+    
 </html>
