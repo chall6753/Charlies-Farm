@@ -1,3 +1,4 @@
+// preprocessor
 #include <Arduino.h>
 #include <Ezo_i2c.h> //include the EZO I2C library from https://github.com/Atlas-Scientific/Ezo_I2c_lib
 #include <Wire.h>    //include arduinos i2c library
@@ -27,7 +28,7 @@ const char* password = "Jester91!";
 // const char* serverName = "http://10.0.0.54/charliesfarm/post-esp-data.php";
 // const char* serverName1 = "http://10.0.0.54/charliesfarm/GetData.php";
 const char* serverName = "https://charlies-farm-database.herokuapp.com/src/post-esp-data.php";
-const char* serverName1 = "http://10.0.0.54/charliesfarm/GetData.php";
+const char* serverName1 = "https://charlies-farm-database.herokuapp.com/src/GetData.php";
 float water_temp;
 float pH;
 float ec;
