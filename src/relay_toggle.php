@@ -84,7 +84,14 @@
         <input type="hidden" name="id" value="4"/>  
         <input type="hidden" name="status" value='0'/>
     </form>
-    
+    <form action="Update_Relay_DB.php" method="GET" id="highLightOn" >
+        <input type="hidden" name="id" value="3"/>  
+        <input type="hidden" name="status" value='1'/>
+    </form>
+    <form action="Update_Relay_DB.php" method="GET" id="highLightOff">
+        <input type="hidden" name="id" value="3"/>  
+        <input type="hidden" name="status" value='0'/>
+    </form>
     <button class="onButton" name= "subject" type="submit" form="pumpOn" value="pumpOn" >Pump On</button>
     <button class="offButton" name= "subject" type="submit" form="pumpOff" value="pumpOff">Pump Off</button>
     <br>
@@ -93,6 +100,9 @@
     <br>
     <button class="onButton" name= "subject" type="submit" form="fanOn" value="fanOn" >Fan On</button>
     <button class="offButton" name= "subject" type="submit" form="fanOff" value="fanOff">Fan Off</button>
+    <br>
+    <button class="onButton" name= "subject" type="submit" form="Bright On" value="brightsOff" >Brights On</button>
+    <button class="offButton" name= "subject" type="submit" form="Bright Off" value="brightsOff">Brights Off</button>
   </body>
   <br></br>
   <a href="https://charlies-farm-database.herokuapp.com/" >Sensor Data</a>
