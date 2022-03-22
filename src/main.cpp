@@ -23,7 +23,7 @@ void step2();
 void step3();
 // Replace with your network credentials
 const char* ssid     = "dogghouse";
-const char* password = "Jester91!";
+const char* password = "xxxxxxx";
 // REPLACE with your Domain name and URL path or IP address with path
 const char* serverName = "https://charlies-farm-database.herokuapp.com/src/post-esp-data.php";
 const char* serverName1 = "https://charlies-farm-database.herokuapp.com/src/GetData.php";
