@@ -7,6 +7,7 @@
 #include <Adafruit_HTU21DF.h>
 #include <WiFi.h>
 #include <HTTPClient.h>
+#include <RTClib.h>
 
 Ezo_board EC = Ezo_board(60, "EC");      //create an EC circuit object who's address is 60 and name is "EC"
 Ezo_board RTD = Ezo_board(102, "RTD");    //create an RTD circuit object who's address is 102 and name is "RTD"
@@ -37,7 +38,7 @@ int pmp_b;
 Sequencer3 Seq( &step1, 815, //calls the steps in sequence with time in between them
                 &step2, 815, 
                 &step3, 2000); 
-
+RTC_DS3231 rtc;
 void setup() {      
   Wire.begin();                           //start the I2C
   Serial.begin(115200);                     //start the serial communication to the computer
@@ -54,7 +55,7 @@ void setup() {
   Serial.println(WiFi.localIP());
   pinMode(12,OUTPUT);//pump to arduino
   pinMode(14,OUTPUT);//light to arduino
-  pinMode(27,OUTPUT);//heater to arduino
+  pinMode(27,OUTPUT);//bright light to arduino
   pinMode(26,OUTPUT);//fan to arduino
 }
 
